@@ -1,0 +1,38 @@
+Disable these 2 main services which consumes so much of data ( DoS, BITS)
+
+------------------------------------------------------------
+to disable DoS:
+
+1️⃣ Press Win + R
+
+regedit
+
+2️⃣ Go to:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc
+
+3️⃣ Double click
+
+Start
+
+4️⃣ Change value to
+
+4
+
+------------------------------------------------------------
+Disable using Administrator CMD
+
+Press Start
+
+Type cmd
+
+Right-click Command Prompt → Run as administrator
+
+to diabale BITS enter below commands
+
+sc stop BITS
+sc config BITS start= disabled
+
+------------------------------------------------------------
+
+>>>> MUST RESTART YOUR PC TO APPLY THESE CHANGES <<<<
